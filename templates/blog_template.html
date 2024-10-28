@@ -1,0 +1,24 @@
+<!-- templates/blog_template.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ website_name }} - Blog</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dark_theme.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 contenteditable="true">{{ website_name }}'s Blog</h1>
+        </header>
+        <main>
+            <h2 contenteditable="true">Welcome to {{ website_name }}'s Blog!</h2>
+            <p contenteditable="true">This is your first post. Start editing your text here.</p>
+        </main>
+        <footer>
+            <p contenteditable="true">&copy; 2024 {{ website_name }}</p>
+        </footer>
+    </div>
+</body>
+</html>

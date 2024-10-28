@@ -1,0 +1,50 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dark_theme.css') }}">
+</head>
+
+
+<!-- BODY (CONTENTS OF THE PAGE)-->>
+<body>
+
+    <!-- INTRO -->
+    <div id="intro-screen">
+        Powered by <span class="highlight">Wy</span>
+    </div>
+
+    <!-- BRANDING TOP-LEFT -->
+    <div class="branding">
+        Powered by <span class="highlight">Wy</span>
+    </div>
+
+    <!-- MAIN CONTENT HERE -->
+    <div class="container" id="main-content">
+        <h1>Create Your Custom Website</h1>
+        <form action="/" method="POST">
+            <label for="website_name">Website Name:</label>
+            <input type="text" id="website_name" name="website_name" required>
+
+            <label for="website_type">Select Website Type:</label>
+            <select id="website_type" name="website_type" required>
+                <option value="blog">Blog</option>
+                <option value="portfolio">Portfolio</option>
+                <option value="ecommerce">E-commerce</option>
+            </select>
+
+            <button type="submit">Generate Website</button>
+        </form>
+    </div>
+
+
+     <!-- Canvas for particles effect -->
+     <canvas id="particle-canvas"></canvas>
+    <!-- Links to js -->
+    <script src="{{ url_for('static', filename='js/particles.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/intro.js') }}"></script>
+</body>
+</html>

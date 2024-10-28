@@ -1,0 +1,24 @@
+<!-- templates/ecommerce_template.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ website_name }} - E-commerce</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dark_theme.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 contenteditable="true">{{ website_name }}'s Store</h1>
+        </header>
+        <main>
+            <h2 contenteditable="true">Our Products</h2>
+            <p contenteditable="true">Edit this section to display your products and services.</p>
+        </main>
+        <footer>
+            <p contenteditable="true">&copy; 2024 {{ website_name }}</p>
+        </footer>
+    </div>
+</body>
+</html>
